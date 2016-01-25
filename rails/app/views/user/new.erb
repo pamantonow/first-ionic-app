@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>New user</h1>
+
+<form id="article_form" action="/users" method="post">
+
+ 
+  <div class="form">
+    <label for="username">Username:</label>
+    <input type="text" name="user[username]" placeholder="eg. Lopez">
+  </div>
+
+  <div class="form">
+    <label for="email">Email:</label>
+    <input type="text" name="user[email]" placeholder="ilovedogs@gmail.com">
+  </div>
+
+  <div class="form">
+    <label for="password">Password:</label>
+    <input type="password" name="user[password]" placeholder="eg ahjshajakshsjka">
+  </div>
+
+  <div class="form_submit">
+    <input type="submit" value="Submit">
+  </div>
+
+</form>
+
+   <%if @errors %>
+    <%=@errors %>
+  <%end%>
+</div>
